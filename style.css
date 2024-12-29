@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #e5e5fd;
+    min-height: 100vh;
+    border: 10px solid #1d1e4c;
+    padding: 20px;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.image {
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 100px;
+}
+
+.top h4 {
+    text-align: end;
+    font-size: 1.8rem;
+}
+
+.top h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1d1e4c;
+    text-transform: capitalize;
+    flex-basis: 100%;
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1.2px;
+}
+.bio{
+    margin-top: 50px;
+}
+.bio h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.bio ul{
+    margin-left: 20px;
+    padding-left: 0;
+}
+.bio li{
+    margin-bottom: 13px;
+    font-size: 1rem;
+    list-style-position: inside;
+}
+footer{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+@media (max-width:768px){
+    .top{
+        margin-top: 50px;
+    }
+    .top h4, .top h1{
+        text-align: center;
+        flex-basis: 100%;
+    }
+    .top h1{
+        font-size: 2.5rem;
+    }
+    .top h4{
+        font-size: 1.5rem;
+    }
+    .about h2{
+        font-size: 2rem;
+    }
+    .about p{font-size: 0.9rem;}
+    .bio h3{
+        font-size: 1.5rem;
+    }
+    .bio li{
+        font-size: 0.9rem;
+    }
+    footer{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:480px){
+    .image img{
+        max-width: 200px;
+    }
+    .top{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .top h1{
+        font-size: 2rem;
+    }
+    .top h4{
+      font-size: 1.2rem;
+    }
+    .about h2{
+        font-size: 1.5rem;
+    }
+    .about p{
+        font-size: 0.8rem;
+    }
+    .bio h3{
+        font-size: 1.2rem;
+    }
+    .bio li{
+        font-size: 0.8rem;
+    }
+    footer{
+        font-size: 0.8rem;
+    }
+}
