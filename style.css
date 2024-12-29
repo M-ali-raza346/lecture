@@ -145,4 +145,18 @@ footer{
     footer{
         font-size: 0.8rem;
     }
+
+}
+@media (max-width:360px){
+    .image img{
+        max-width: 150px;
+    }
+    .top{
+        margin-top: 20px;
+    }
+    .top h1{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
 }
